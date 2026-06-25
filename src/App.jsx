@@ -8,10 +8,10 @@ import {
 const CATEGORIES = [
     { name: 'Jollof', emoji: '🍚' },
     { name: 'Suya', emoji: '🥩' },
-    { name: 'Chops', emoji: '🥟' },
+    { name: 'Shawarma', emoji: '🥟' },
     { name: 'Soups', emoji: '🍲' },
     { name: 'Chicken', emoji: '🍗' },
-    { name: 'Drinks', emoji: '🥤' },
+    { name: 'Fresh Juice', emoji: '🥤' },
     { name: 'Healthy', emoji: '🥬' },
     { name: 'Bakery', emoji: '🍞' }
 ];
