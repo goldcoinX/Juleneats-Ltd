@@ -10,7 +10,7 @@ const CATEGORIES = [
     { name: 'Suya', emoji: '🥩' },
     { name: 'Chops', emoji: '🥟' },
     { name: 'Soups', emoji: '🍲' },
-    { name: 'Chicken', emoji: '🍗' },
+    { name: 'Protein', emoji: '🍗' },
     { name: 'Drinks', emoji: '🥤' },
     { name: 'Healthy', emoji: '🥬' },
     { name: 'Bakery', emoji: '🍞' }
