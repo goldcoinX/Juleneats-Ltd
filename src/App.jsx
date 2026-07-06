@@ -184,8 +184,8 @@ export default function App() {
                         <button className="p-2 hover:bg-gray-100 rounded-full transition-colors hidden sm:block lg:hidden">
                             <Menu className="w-6 h-6" />
                         </button>
-                        <a href="#" className="text-2xl lg:text-3xl font-black text-[#FF6B00] tracking-tighter">
-                            JULEN<span className="text-black">EATS</span>
+                        <a href="#" className="flex items-center">
+                            <img src="https://uploads.onecompiler.io/44jjpumhc/1783313318175/Juleneat%20Logo.jpeg" alt="Julen Eats Logo" className="h-10 lg:h-12 object-contain mix-blend-multiply" />
                         </a>
                     </div>
 
@@ -266,7 +266,6 @@ export default function App() {
                 </div>
             </nav>
 
-            {}
             <main className="pt-24 lg:pt-20 flex min-h-screen">
                 
                 {/* Left Scrollable Area */}
@@ -291,7 +290,7 @@ export default function App() {
                         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
                             <div className="flex-1 text-center md:text-left">
                                 <h1 className="text-5xl lg:text-7xl font-black mb-6 tracking-tight leading-[1.1]">
-                                    We have <br/><span className="text-[#FF6B00]">food for you!</span>
+                                    GOOD FOOD. <br/><span className="text-[#FF6B00]">GREAT MOMENTS.</span>
                                 </h1>
                                 
                                 {/* Address Input & Order Button */}
@@ -393,7 +392,6 @@ export default function App() {
                         </div>
                     </div>
 
-                    {}
                     {/* Corporate Catering Banner */}
                     <div id="catering" className="px-4 lg:px-8 mb-12">
                         <div className="bg-[#FF6B00] rounded-3xl p-8 lg:p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
@@ -439,7 +437,7 @@ export default function App() {
                     <footer className="px-4 lg:px-8 py-12 border-t border-gray-200 bg-white text-center md:text-left">
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                             <div>
-                                <h2 className="text-2xl font-black text-[#FF6B00] tracking-tighter mb-2">JULEN<span className="text-black">EATS</span></h2>
+                                <img src="https://uploads.onecompiler.io/44jjpumhc/1783313318175/Juleneat%20Logo.jpeg" alt="Julen Eats Logo" className="h-10 lg:h-12 mb-3 mx-auto md:mx-0 object-contain mix-blend-multiply" />
                                 <p className="text-gray-500 text-sm">© 2026 Julen Eats. All rights reserved.</p>
                             </div>
                             <div className="flex gap-6 text-sm font-semibold text-gray-600">
@@ -451,7 +449,6 @@ export default function App() {
                     </footer>
                 </div>
 
-                {}
                 {/* Right Fixed Area (Map for Pickup) */}
                 {viewMode === 'pickup' && (
                     <div className="hidden lg:block w-[40%] xl:w-[35%] bg-gray-200 relative border-l border-gray-200 shadow-inner z-10 h-[calc(100vh-80px)] sticky top-20">
@@ -498,7 +495,6 @@ export default function App() {
                 <Phone className="w-6 h-6 fill-current" />
             </a>
 
-            {}
             {/* Slide-out Cart Panel */}
             <div className={`fixed inset-0 z-50 transition-opacity duration-300 ${isCartOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setIsCartOpen(false)}></div>
@@ -662,7 +658,6 @@ export default function App() {
                 )}
             </div>
 
-            {}
             {/* Login Modal */}
             <div className={`fixed inset-0 z-[100] flex items-center justify-center p-4 transition-opacity duration-300 ${isLoginOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setIsLoginOpen(false)}></div>
