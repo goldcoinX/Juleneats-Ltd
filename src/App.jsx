@@ -83,6 +83,7 @@ const PROTEIN_OPTIONS = [
 ];
 
 export default function App() {
+    const [showSplash, setShowSplash] = useState(true); // Coming Soon Splash Screen
     const [viewMode, setViewMode] = useState('delivery'); // 'delivery' or 'pickup'
     const [address, setAddress] = useState('');
     
@@ -107,6 +108,15 @@ export default function App() {
     const deliveryFee = cartSubtotal > 0 && viewMode === 'delivery' ? 1200 : 0;
     const cartTotal = cartSubtotal + deliveryFee;
     const currentItemTotal = selectedItem ? (selectedItem.basePrice + selectedProtein.price) * itemQuantity : 0;
+
+    // Scroll lock for splash screen
+    useEffect(() => {
+        if (showSplash) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [showSplash]);
 
     const openItemModal = (item) => {
         setSelectedItem(item);
@@ -175,6 +185,35 @@ export default function App() {
     return (
         <div className="min-h-screen bg-white text-[#1A1A1A] font-sans overflow-x-hidden selection:bg-[#FF6B00] selection:text-white">
             
+            {/* COMING SOON SPLASH SCREEN OVERLAY */}
+            <div 
+                className={`fixed inset-0 z-[200] bg-black flex flex-col items-center justify-center transition-transform duration-700 ease-in-out origin-bottom cursor-pointer ${showSplash ? 'translate-y-0' : '-translate-y-full'}`} 
+                onClick={() => setShowSplash(false)}
+            >
+                <div className={`transform transition-all duration-1000 w-full flex flex-col items-center px-4 ${showSplash ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
+                    <img 
+                        src="https://res.cloudinary.com/dccxjo9x8/image/upload/v1786211529/Juleneats_flyer_2_cjbegh.png" 
+                        alt="Coming Soon" 
+                        className="w-full max-w-2xl object-contain mb-8 max-h-[60vh]"
+                    />
+                    
+                    {/* Job Applicant Link */}
+                    <a 
+                        href="https://forms.gle/8rRBS1jumqUe6sEbA" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()} // Prevents the click from closing the splash screen
+                        className="bg-[#FF6B00] text-white px-8 py-4 rounded-full font-black text-lg hover:bg-[#e66000] hover:scale-105 transition-all shadow-[0_0_30px_rgba(255,107,0,0.4)] flex items-center gap-3 z-50 mb-6 text-center"
+                    >
+                        <Briefcase className="w-6 h-6" /> Click to Join the Juleneats Family
+                    </a>
+                    
+                    <p className="text-white/50 text-sm font-semibold tracking-widest uppercase animate-pulse">
+                        Tap anywhere to enter website
+                    </p>
+                </div>
+            </div>
+
             {/* Top Navigation Bar */}
             <nav className="fixed w-full z-40 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20">
                 <div className="h-full px-4 lg:px-6 flex items-center justify-between gap-4 max-w-[1600px] mx-auto">
@@ -225,8 +264,13 @@ export default function App() {
                         </div>
                     </div>
 
-                    {/* Right: Cart & Auth */}
-                    <div className="flex items-center gap-2 shrink-0">
+                    {/* Right: Actions */}
+                    <div className="flex items-center gap-3 shrink-0">
+                        {/* Job Form Link in Nav */}
+                        <a href="https://forms.gle/8rRBS1jumqUe6sEbA" target="_blank" rel="noopener noreferrer" className="hidden xl:flex items-center gap-2 px-4 py-2 text-sm font-bold text-[#FF6B00] bg-orange-50 hover:bg-orange-100 rounded-full transition-colors">
+                            <Briefcase className="w-4 h-4" /> Join the Family
+                        </a>
+
                         <button className="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors">
                             <Search className="w-6 h-6" />
                         </button>
@@ -440,7 +484,8 @@ export default function App() {
                                 <img src="https://uploads.onecompiler.io/44jjpumhc/1783313318175/Juleneat%20Logo.jpeg" alt="Julen Eats Logo" className="h-10 lg:h-12 mb-3 mx-auto md:mx-0 object-contain mix-blend-multiply" />
                                 <p className="text-gray-500 text-sm">© 2026 Julen Eats. All rights reserved.</p>
                             </div>
-                            <div className="flex gap-6 text-sm font-semibold text-gray-600">
+                            <div className="flex flex-wrap justify-center gap-6 text-sm font-semibold text-gray-600">
+                                <a href="https://forms.gle/8rRBS1jumqUe6sEbA" target="_blank" rel="noopener noreferrer" className="hover:text-black">Careers</a>
                                 <a href="#" className="hover:text-black">Terms</a>
                                 <a href="#" className="hover:text-black">Privacy</a>
                                 <a href="#" className="hover:text-black">Delivery Zones</a>
