@@ -9,67 +9,67 @@ import {
 const FOOD_ITEMS = [
     { 
         id: 1, name: 'Suya Bowls', basePrice: 3500, 
-        img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608533/Suya_Bowls_v9mkzs.jpg',
         desc: 'A hearty bowl filled with premium spiced Suya, fresh veggies, and our signature sauce.',
         rating: 4.8, reviews: 342, category: 'Bowls', badge: 'Popular'
     },
     { 
         id: 2, name: 'Shawarma', basePrice: 2500, 
-        img: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608534/Shawarma_itrexr.jpg',
         desc: 'Classic rich and creamy shawarma wrap packed with seasoned meat and fresh vegetables.',
         rating: 4.7, reviews: 512, category: 'Snacks', badge: 'Must Try'
     },
     { 
         id: 3, name: 'Burgers', basePrice: 4000, 
-        img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608534/Burgers_yl4rnr.jpg',
         desc: 'Juicy, flame-grilled burger topped with melted cheese, crisp lettuce, and fresh tomatoes.',
         rating: 4.6, reviews: 128, category: 'Snacks'
     },
     { 
         id: 4, name: 'Grilled Chicken', basePrice: 3500, 
-        img: 'https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608533/Grilled_Chicken_qut8pi.jpg',
         desc: 'Tender, perfectly grilled chicken marinated in a rich blend of traditional spices.',
         rating: 4.9, reviews: 450, category: 'Grills', badge: 'Spicy'
     },
     { 
         id: 5, name: 'Grilled Fish', basePrice: 4500, 
-        img: 'https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608533/Grilled_Fish_jrzqgd.jpg',
         desc: 'Freshly caught fish, grilled to perfection and garnished with spicy peppers and herbs.',
         rating: 4.8, reviews: 412, category: 'Grills'
     },
     { 
         id: 6, name: 'Pasta', basePrice: 3500, 
-        img: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608534/Pasta_ctcty3.jpg',
         desc: 'Rich and creamy pasta tossed in a savory homemade sauce.',
         rating: 4.5, reviews: 189, category: 'Pasta'
     },
     { 
         id: 7, name: 'Rice Bowls', basePrice: 3000, 
-        img: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608533/Rice_Bowl_rbjpfe.jpg',
         desc: 'A comforting, flavorful bowl of premium rice served with your choice of savory toppings.',
         rating: 4.7, reviews: 310, category: 'Bowls'
     },
     { 
         id: 8, name: 'Plantain', basePrice: 1500, 
-        img: 'https://images.unsplash.com/photo-1604245100155-2baea7b7bb21?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608534/Plantain_y7zoaq.jpg',
         desc: 'Sweet, golden-fried plantain slices. The perfect side to any meal.',
         rating: 4.9, reviews: 205, category: 'Sides'
     },
     { 
         id: 9, name: 'Smoothies', basePrice: 2000, 
-        img: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608533/Smoothies_htnfnr.jpg',
         desc: 'A refreshing, ice-cold blend of fresh seasonal and tropical fruits.',
         rating: 4.8, reviews: 145, category: 'Drinks'
     },
     { 
         id: 10, name: 'Zobo', basePrice: 1500, 
-        img: 'https://uploads.onecompiler.io/44jjpumhc/1782418700446/Chilled%20Zobo%20&%20Smoothies.jpeg',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608533/zobo_uvwr8s.jpg',
         desc: 'Refreshing hibiscus tea infused with pineapple, ginger, and cloves.',
         rating: 4.6, reviews: 289, category: 'Drinks'
     },
     { 
         id: 11, name: 'Cocktails', basePrice: 3500, 
-        img: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80',
+        img: 'https://res.cloudinary.com/dccxjo9x8/image/upload/v1786608532/Cocktail_tlfez2.jpg',
         desc: 'Signature mixed drinks crafted perfectly to set the right mood.',
         rating: 4.7, reviews: 220, category: 'Drinks', badge: 'New'
     }
