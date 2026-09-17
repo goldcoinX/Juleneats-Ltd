@@ -208,7 +208,7 @@ export default function App() {
             >
                 <div className={`transform transition-all duration-1000 w-full flex flex-col items-center px-4 ${showSplash ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
                     <img 
-                        src="https://res.cloudinary.com/dccxjo9x8/image/upload/v1786211529/Juleneats_flyer_2_cjbegh.png" 
+                        src="https://res.cloudinary.com/dccxjo9x8/image/upload/v1789644251/juleneats_flyer_2_4_gohdo5.png" 
                         alt="Coming Soon" 
                         className="w-full max-w-2xl object-contain mb-8 max-h-[60vh]"
                     />
